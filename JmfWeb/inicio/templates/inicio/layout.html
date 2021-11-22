@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    {% load static %}
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Link al css del static-->
+        <link href="{% static 'css/fontawesome/css/all.min.css' %}" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        
+
+        <!--MATERIALIZE-->
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <header>
+
+            <div class="img-logo">
+                <img src="{% static 'img/logo2.png' %}">
+            </div>
+
+            <div class="hamburger">
+                <div class="_layer -top"></div>
+                <div class="_layer -mid"></div>
+                <div class="_layer -bottom"></div>
+            </div>
+
+            <nav class="menuppal">
+                <ul>
+                    <li><a href="#">Quienes somos</a></li>
+                    <li><a href="#">Que hacemos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    
+                </ul>
+            </nav>
+
+        </header>
+
+        
+
+
+
+    {% block content %} {% endblock %}
+
+    <footer>
+        <p>@Copyright Todos los derechos reservados</p>
+    </footer>
+
+    <!-- MATERIALIZE.JS -->
+    
+    
+    <script src="{% static 'js/script.js' %}"></script>
+    </body>
+
+
+</html>
